@@ -20,7 +20,7 @@
     [Order]-0..1>[PaymentMethod]
     }}}
 
-    Edit the variable yuml_url to point to the required server
+    Edit the variable yuml_url to point to the required server, and the proxies dictionary to any necessary proxies
 
     v0.1: 30-Sep-2011.  Basic implementation displaying PNG
 

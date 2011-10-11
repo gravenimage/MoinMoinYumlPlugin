@@ -1,0 +1,24 @@
+MoinMoin - yuml
+Inspired by GoogleChart.py (http://moinmo.in/ParserMarket/GoogleChart)
+
+This parser creates a UML diagram using a yuml server, using the API described at http://yuml.me
+
+Configuration:
+- place in the data/plugin/parser directory of the moinmoin storage directory
+- restart server (if necessary, see http://moinmo.in/MoinDev/PluginConcept)
+
+Example usage:
+
+{{{
+#!yuml
+# Cool UML Diagram
+[Customer]+1->*[Order]
+[Order]++1-items >*[LineItem]
+[Order]-0..1>[PaymentMethod]
+}}}
+
+Edit the variable yuml_url to point to the required server, and the proxies dictionary to any necessary proxies
+
+v0.1: 30-Sep-2011.  Basic implementation displaying PNG
+
+@license: GNU GPL
